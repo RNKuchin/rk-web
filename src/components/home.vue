@@ -206,6 +206,8 @@
             <img
               src="/planer.jpg"
               alt="Project 1"
+              width="300"
+              height="400"
               class="w-full transform group-hover:scale-110 transition duration-500"
             />
             <div
@@ -256,6 +258,8 @@
             <img
               src="/house.jpg"
               alt="Project 1"
+              width="300"
+              height="400"
               class="w-full transform group-hover:scale-110 transition duration-500"
             />
             <div
@@ -307,6 +311,8 @@
             <img
               src="/to-do.jpg"
               alt="Project 2"
+              width="300"
+              height="400"
               class="w-full transform group-hover:scale-110 transition duration-500"
             />
             <div
