@@ -204,7 +204,7 @@
         >
           <div class="relative overflow-hidden">
             <img
-              src="/planer.jpg"
+              src="../../public/planer.jpg"
               alt="Project 1"
               class="w-full transform group-hover:scale-110 transition duration-500"
             />
