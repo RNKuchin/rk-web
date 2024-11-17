@@ -204,7 +204,7 @@
         >
           <div class="relative overflow-hidden">
             <img
-              src="../../public/planer.jpg"
+              src="/planer.jpg"
               alt="Project 1"
               class="w-full transform group-hover:scale-110 transition duration-500"
             />
@@ -319,7 +319,6 @@
                     >Vue.js</span
                   >
                   <span
-                    <span
                     class="px-2 py-1 bg-white/20 backdrop-blur-md rounded text-white text-sm"
                     >Docker</span
                   >
