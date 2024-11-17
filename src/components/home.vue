@@ -239,7 +239,7 @@
               Ведите свои заметки и становитесь успешнее...
             </p>
             <a
-              href="#"
+              href="https://rnkuchin.github.io/Book-and-planer/"
               class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
             >
               Подробнее
@@ -382,7 +382,7 @@
             </h3>
             <p class="text-gray-600 mb-4">Сайт для фитнес тренера</p>
             <a
-              href="rnkuchin.github.io/mike/"
+              href="https://rnkuchin.github.io/mike/"
               target="_blank"
               class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
             >
