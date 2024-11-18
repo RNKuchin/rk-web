@@ -475,8 +475,7 @@
         <!-- Форма -->
         <form
           class="space-y-6 bg-gray-50 p-8 rounded-2xl"
-          action="form.php"
-          method="POST"
+          @submit.prevent="handleSubmit"
         >
           <div>
             <label class="block text-gray-700 mb-2 font-medium" for="name"
@@ -489,6 +488,7 @@
               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 transition-colors"
               placeholder="Ваше имя"
               required
+              v-model="formData.name"
             />
           </div>
           <div>
@@ -502,6 +502,7 @@
               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 transition-colors"
               placeholder="your@email.com"
               required
+              v-model="formData.email"
             />
           </div>
           <div>
@@ -515,6 +516,7 @@
               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 transition-colors resize-none"
               placeholder="Расскажите о вашем проекте..."
               required
+              v-model="formData.message"
             ></textarea>
           </div>
           <button
@@ -594,3 +596,40 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      formData: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    };
+  },
+  methods: {
+    async handleSubmit() {
+      try {
+        const response = await fetch("https://rk-web.ru:3000/submit-form", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(this.formData),
+        });
+
+        if (response.ok) {
+          alert("Данные успешно отправлены!");
+          this.formData = { name: "", email: "", message: "" }; // Очистка формы
+        } else {
+          alert("Ошибка при отправке данных.");
+        }
+      } catch (error) {
+        console.error("Ошибка:", error);
+        alert("Ошибка соединения с сервером.");
+      }
+    },
+  },
+};
+</script>
