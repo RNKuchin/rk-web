@@ -92,7 +92,7 @@
               class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-20"
             ></div>
             <img
-              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/hero.jpg"
               height="600"
               alt="Hero Image"
               class="relative rounded-lg shadow-xl"
