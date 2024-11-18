@@ -611,7 +611,7 @@ export default {
   methods: {
     async handleSubmit() {
       try {
-        const response = await fetch("https://rk-web.ru:3000/submit-form", {
+        const response = await fetch("https://rk-web.online/submit-form.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
